@@ -235,3 +235,7 @@ endfunction
 " }}}
 
 " vim: set foldmethod=marker ts=2 sw=2 tw=80 noet :
+
+" python bindings
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'

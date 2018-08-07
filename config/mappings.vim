@@ -5,6 +5,17 @@
 " Non-standard {{{
 " ------------
 
+" Nerdtree binding
+
+map <C-n> :NERDTreeToggle<CR>
+" let g:NERDTreeMapActivateNode = '<c-n>'
+" let g:NERDTreeMapPreview="<F4>"
+
+" Settings for CtrlP
+set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 " Window-control prefix
 nnoremap  [Window]   <Nop>
 nmap      s [Window]

@@ -5,6 +5,8 @@
 " Enable 256 color terminal
 set t_Co=256
 
+set relativenumber
+
 " Enable true color
 if has('termguicolors')
 	set termguicolors
@@ -38,3 +40,7 @@ if ! exists('g:colors_name')
 endif
 
 " vim: set ts=2 sw=2 tw=80 noet :
+
+" changes applied after reading theme....
+hi CursorLineNr term=bold cterm=bold ctermfg=21 guifg=White guibg=#282828
+hi LineNr term=bold cterm=bold ctermfg=21 guifg=Grey guibg=#383838

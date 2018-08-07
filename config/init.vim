@@ -8,6 +8,10 @@
 let g:mapleader="\<Space>"
 let g:maplocalleader=';'
 
+
+hi CursorLineNr term=bold cterm=bold ctermfg=21 guifg=White guibg=#282828
+hi LineNr term=bold cterm=bold ctermfg=21 guifg=Grey guibg=#444444
+
 " Release keymappings prefixes, evict entirely for use of plug-ins.
 nnoremap <Space>  <Nop>
 xnoremap <Space>  <Nop>
@@ -48,6 +52,7 @@ if &runtimepath !~# '/dein.vim'
 	execute 'set runtimepath+='.substitute(
 		\ fnamemodify(s:dein_dir, ':p') , '/$', '', '')
 endif
+
 
 " }}}
 " Load less plugins while SSHing to remote machines {{{
